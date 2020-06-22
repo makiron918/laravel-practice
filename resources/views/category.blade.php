@@ -7,5 +7,8 @@
 </head>
 <body>
   <p>{{ $category }}の一覧</p>
+  @if ($category == 'news')
+    <p>本日のニュースをお伝えします</p>
+  @endif
 </body>
 </html>
