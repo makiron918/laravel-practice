@@ -22,7 +22,7 @@ Route::get('/archives/', function() {
 });
 
 Route::get('/archives/{category}/', function($category) {
-    return view('category');
+    return view('category', ['category'=>$category]);
 });
 
 Route::post('/join/', function() {
