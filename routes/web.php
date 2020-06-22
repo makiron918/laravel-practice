@@ -37,7 +37,4 @@ Route::get('/{id}/', function($id) {
     return $id . 'のページ';
 });
 
-Route::get('/sum/{x}/{y}/', function($x, $y) {
-    $answer = $x + $y;
-    return view('sum', ['x'=>$x, 'y'=>$y, 'answer'=>$answer]);
-});
+Route::get('/sum/{x}/{y}/', 'MathController@sum');
