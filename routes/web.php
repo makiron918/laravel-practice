@@ -21,6 +21,6 @@ Route::get('/archives/', function() {
     return '記事一覧';
 });
 
-Route::get('/archives/dialy/', function() {
-    return 'dialyの一覧';
+Route::get('/archives/{category}/', function($category) {
+    return $category . 'の一覧';
 });
