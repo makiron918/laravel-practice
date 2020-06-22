@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/archives/', function() {
-    return '<h1>記事一覧</h1>';
+    return view('archives');
 });
 
 Route::get('/archives/{category}/', function($category) {
