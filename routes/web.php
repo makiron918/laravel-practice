@@ -25,7 +25,10 @@ Route::get('/archives/{category}/', function($category) {
     return $category . 'の一覧';
 });
 
+Route::get('/join/', function() {
+    return '入会申し込み完了';
+});
+
 Route::get('/{id}/', function($id) {
     return $id . 'のページ';
 });
-
