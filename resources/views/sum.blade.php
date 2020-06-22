@@ -7,6 +7,6 @@
 </head>
 <body>
   <h1>足し算</h1>
-  <p>{{ $x }} + {{ $y }} = {{ $answer }}</p>
+  <p>{{ $x }} + {{ $y }} = {{ $sum }}</p>
 </body>
 </html>
