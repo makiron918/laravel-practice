@@ -38,5 +38,6 @@ Route::get('/{id}/', function($id) {
 });
 
 Route::get('/sum/{x}/{y}/', function($x, $y) {
-    return view('sum', ['x'=>$x, 'y'=>$y]);
+    $answer = $x + $y;
+    return view('sum', ['x'=>$x, 'y'=>$y, 'answer'=>$answer]);
 });
