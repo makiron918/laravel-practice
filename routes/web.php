@@ -18,11 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/archives/', function() {
-    return view('archives');
+    return view('archives.index');
 });
 
 Route::get('/archives/{category}/', function($category) {
-    return view('category', ['category'=>$category]);
+    return view('archives.category', ['category'=>$category]);
 });
 
 Route::post('/join/', function() {
