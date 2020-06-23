@@ -7,7 +7,7 @@
 </head>
 <body>
   <?php
-  print(date('D') . 日);
+  print(date('D') . '日');
   ?>
 </body>
 </html>
