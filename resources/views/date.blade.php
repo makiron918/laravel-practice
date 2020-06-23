@@ -7,7 +7,7 @@
 </head>
 <body>
   <?php
-  print(date('D') . '日');
+  print(date('D') . date('G') . '時' . date('i') . '分');
   ?>
 </body>
 </html>
