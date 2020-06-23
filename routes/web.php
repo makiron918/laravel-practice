@@ -38,3 +38,5 @@ Route::get('/{id}/', function($id) {
 });
 
 Route::get('/sum/{x}/{y}/', 'MathController@sum');
+
+Route::get('/date/', 'MathController@date');
