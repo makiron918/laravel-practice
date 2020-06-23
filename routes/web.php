@@ -33,10 +33,12 @@ Route::get('/join/', function() {
     return redirect()->to('/');
 });
 
+Route::get('/date/', 'MathController@date');
+
 Route::get('/{id}/', function($id) {
     return $id . 'のページ';
 });
 
 Route::get('/sum/{x}/{y}/', 'MathController@sum');
 
-Route::get('/date/', 'MathController@date');
+
