@@ -13,4 +13,8 @@ class MathController extends Controller
 
         return View::make('sum', ['x'=>$x, 'y'=>$y, 'sum'=>$sum]);
     }
+
+    public function date() {
+        return View::make('date');
+    }
 }
